@@ -7,11 +7,25 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Üye Girişi</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+     
+      <ion-item>
+        <ion-label>Email input</ion-label>
+        <ion-input type="email" placeholder="email@domain.com"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password input</ion-label>
+        <ion-input type="password" value="password"></ion-input>
+      </ion-item>
+      <div style="text-align: right;">
+      <ion-button size="small" fill="outline">GİRİŞ</ion-button>
+      </div>
+      
+    </ion-card-content>
+  </ion-card>
 </ion-content>
