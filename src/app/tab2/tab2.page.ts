@@ -6,7 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+  
+  myEmail: string = ""
+  myPass: string = ""
 
   constructor() {}
+
+  giris(){
+    if(this.myEmail=="t@t.com" && this.myPass=="1234")
+    {
+      console.log(this.myEmail+" Başarılı giriş yaptınız");
+    }
+    else{
+      console.log("Giriş bilgilerinizi kontrol ediniz")
+    }
+  }
 
 }

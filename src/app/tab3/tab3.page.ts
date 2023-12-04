@@ -7,17 +7,11 @@ import { Component } from '@angular/core';
 })
 
 export class Tab3Page {
-  myEmail: string = ""
-  myPass: string = ""
+  
   constructor() {
   }
 
-  mesaj() {
-
-    console.log("Girdiğin email : " + this.myEmail)
-    console.log("Şifren : " + this.myPass)
-    
-  }
+  
 
 
 }

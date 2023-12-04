@@ -1,31 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+     ÜYE GİRİŞİ
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-card>
-    <ion-card-header>
-      <ion-card-title>Üye Girişi</ion-card-title>
-    </ion-card-header>
-  
     <ion-card-content>
      
       <ion-item>
         <ion-label>Email input</ion-label>
-        <ion-input type="email" placeholder="email@domain.com"></ion-input>
+        <ion-input  [(ngModel)]="myEmail"  type="email" placeholder="email@domain.com"></ion-input>
       </ion-item>
+
       <ion-item>
         <ion-label>Password input</ion-label>
-        <ion-input type="password" value="password"></ion-input>
+        <ion-input  [(ngModel)]="myPass" type="password" value="password"></ion-input>
       </ion-item>
-      <div style="text-align: right;margin-top: 15px;">
-      <ion-button size="small" fill="outline">GİRİŞ</ion-button>
+
+      <div class="sagkaydir">
+      <ion-button size="small" (click)="giris()"  fill="outline">GİRİŞ</ion-button>
       </div>
       
     </ion-card-content>
   </ion-card>
+
 </ion-content>
