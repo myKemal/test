@@ -12,25 +12,13 @@ export class Tab3Component implements OnInit {
     "name": "Ürün 1",
     "image": "https://ionicframework.com/docs/img/demos/card-media.png",
     "fiyat": "150 TL",
-    "bilgi": "Here's a small text description for the card content. Nothing more, nothing less."
+    "bilgi": "asssss."
   }
     , {
     "name": "Ürün 2",
     "image": "https://ionicframework.com/docs/img/demos/card-media.png",
     "fiyat": "50 TL",
-    "bilgi": "Here's a small text description for the card content. Nothing more, nothing less."
-  },
-  {
-    "name": "Ürün 3",
-    "image": "https://ionicframework.com/docs/img/demos/card-media.png",
-    "fiyat": "10 TL",
-    "bilgi": "Here's a small text description for the card content. Nothing more, nothing less."
-  },
-  {
-    "name": "Ürün 4",
-    "image": "https://ionicframework.com/docs/img/demos/card-media.png",
-    "fiyat": "120 TL",
-    "bilgi": "Here's a small text description for the card content. Nothing more, nothing less."
+    "bilgi": "sdfsdfsdf."
   }
   ]
   constructor() { }
