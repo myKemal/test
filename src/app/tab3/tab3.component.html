@@ -1,3 +1,37 @@
-<p>
-  product list works!
-</p>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+     ÜRÜN LİSTESİ
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<ion-accordion-group>
+
+  <ion-accordion *ngFor='let p of products ' [value]="p.name">
+    <ion-item slot="header" color="light">
+      <ion-label>{{p.name}}</ion-label>
+    </ion-item>
+   
+    <div class="ion-padding" slot="content">
+      <ion-card>
+        <img alt="Silhouette of mountains" [src]="p.image" />
+        <ion-card-header>
+          <ion-card-title>{{p.name}}</ion-card-title>
+          <ion-card-subtitle>{{p.fiyat}}</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          {{p.bilgi}}
+        </ion-card-content>
+      </ion-card>
+      
+    </div>
+  
+  </ion-accordion>
+
+</ion-accordion-group>
+
+</ion-content>
