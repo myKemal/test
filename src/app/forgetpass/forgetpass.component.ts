@@ -5,10 +5,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './forgetpass.component.html',
   styleUrls: ['./forgetpass.component.scss'],
 })
-export class ForgetpassComponent  implements OnInit {
+export class ForgetpassComponent implements OnInit {
+  myRenk = "#700d0d";
 
   constructor() { }
 
-  ngOnInit() {}
+  renkdegisG(){
+    this.myRenk="#a1a1a1";
+  }
+
+  renkdegisK(){
+    this.myRenk="#700d0d";
+  }
+
+  ngOnInit() { }
 
 }

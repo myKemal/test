@@ -1,3 +1,14 @@
-<p>
-  forgetpass works!
-</p>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+    DATA BINDING
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<label [style.color]="myRenk"  style="font-size: 54px;"> RENK </label>
+<ion-button size="small" (click)="renkdegisK()"  fill="outline"> KIRMIZI</ion-button>
+<ion-button size="small" (click)="renkdegisG()"  fill="outline"> GRI</ion-button>
+
+</ion-content>
